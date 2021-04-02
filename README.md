@@ -23,27 +23,41 @@ dificult selector
 ```javascript
 main.js
 
-removeSplashScreen()
+function buildDom()
+
 createGameScreen()
-MapupdateSCreen()
+removeSplashScreen()
+
+CreateMapscreen()
+removeMapscreen()
+
+CreateGameSCreen()
 removeGameScreen()
+
+createPreGameoverScreen()
+removePreGameOverScreen()
+
 createGameOverScreen()
 removeGameOverScreen()
-endGameScreen()
-PregameoverSCreen()
+
+
+addEventListener(load - splash)
 
 game.js
 
+startObjets()
+updatedLoop()
 checkCollisions()
-startLoop()
+clearcanvas()
 gameOver()  
 updateGameStats()
-clearcanvas()
+
 
 enemmy.js
 
 draw()
 updatePosition()
+isInsideScreen()
 
 pointsObjets.js
 
@@ -55,10 +69,10 @@ player.js
 
 setDirection()
 updatePosition()
-handleScreenCollision()
+checkcolision()
 draw()
-didCollide()
 removeTime()
+RestingKM()
 
 field && background.js
 
