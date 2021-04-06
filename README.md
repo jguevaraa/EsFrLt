@@ -11,11 +11,16 @@ CANVAS, This is a game where the player need to avoid enemies, if the time is ov
 
 ### Backlog
 
-jump movement
-Score
-remains km
-spraint
-dificult selector
+- jump movement
+- Set the Km remains on the HUD
+- Dificult selector
+- Create sprites for enemies and player
+- Set a pre - gameOver stage
+- Adding SFX
+- More stages - Countries
+- Adding sprites
+- Set speed + HUD
+
 #
 
 ## Data structure
