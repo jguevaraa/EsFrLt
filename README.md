@@ -6,7 +6,7 @@ A game that you need to dodge enemies using up left right. the goal is to reach 
 #
 
 ### MVP (DOM - CANVAS)
-CANVAS, This is a game where the player can move betwen squares.
+CANVAS, This is a game where the player need to avoid enemies, if the time is over or the lifes drop to 0 you lose.
 
 
 ### Backlog
