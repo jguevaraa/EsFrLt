@@ -5,8 +5,8 @@ class Enemy {
     // this.width = 90
     // this.height = 140,
     this.size = 20
-    this.width= 20
-    this.height= 20
+    this.width=50
+    this.height= 50
     this.x= positionX;
      this.y = this.canvas.height/3;
     // this.y = 100

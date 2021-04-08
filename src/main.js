@@ -32,7 +32,7 @@ function createSplashScreen() {
   document.body.appendChild(splashScreen);
 
 
-    //ADD MUSIC AND SOUND EFFECTS
+    //ADD MUSIC
   let introductionSound= splashScreen.querySelector("#introduction");
   introductionSound.volume = 0.3;
   introductionSound.play();
@@ -76,12 +76,21 @@ function createGameScreen() {
             <canvas  style="z-index:1"></canvas>
             <img id="overAnimation" style="z-index:2; position:absolute; visibility:hidden" src="/images/overAnimation.gif" alt="overAnimation" />
         </div>
+        <audio controls loop id="intgamesound" preload="auto" style="display: none" src="sounds/intgamesound.mp3"></audio>
         
     </main>
     `);
+ //ADD MUSIC
+  let gameSound= gameScreen.querySelector("#intgamesound");
+  gameSound.volume = 0.3;
+  gameSound.play();  
 
   document.body.appendChild(gameScreen);
+
+ 
   return gameScreen; //this we will explain later
+
+
 }
 
 
@@ -93,15 +102,18 @@ function removeGameScreen() {
 function createGameOverScreen(kmVar) {
   gameOverScreen = buildDom(`
   <main class="overScreen">
-  <img class="gameOvergif" src="/images/gameOvergif.gif" alt="gameOvergif" />
+  
+ 
+  <img class="gameOvergif" src="images/gameOvergif.gif" alt="gameOvergif" />
         <h1 class="overScreenTitle">Muy lento amigo</h1>
         <p>Your score: <span>${kmVar}</span> </p>
         <span class="label">TOP SCORES</span>
-        <li>El chapo:  10</li>
-        <li>Pablo escobar: 30</li>
-    
+        <li>El chapo:  isNaN  </li>
+        <li>Pablo escobar: +9999999999999999999999999 </li>
+        
         <div>
         <button class="buttonover">Restart</button>
+        <audio id="whySound" preload="auto" style="display: none" src="sounds/why.mp3"></audio>
         </div>
     </main>
     `);
@@ -109,6 +121,11 @@ function createGameOverScreen(kmVar) {
     button.addEventListener("click", startGame)
 
     document.body.appendChild(gameOverScreen)
+
+        //ADD MUSIC
+  let whywhoSound= gameOverScreen.querySelector("#whySound");
+  whywhoSound.volume = 0.3;
+  whywhoSound.play();
 }
 function removeGameOverScreen() {
     gameOverScreen.remove()

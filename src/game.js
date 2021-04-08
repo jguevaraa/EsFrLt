@@ -59,7 +59,7 @@ class Game {
 
     //KM LEFT
 
-    this.km = new Timer(3000);
+    this.km = new Timer(8000);
     this.km.kmCount();
 
     // // Add event listener for moving the player
@@ -175,10 +175,9 @@ this.Overimage()
     
     this.kmVar = document.querySelector('.kmLeft');
     this.kmVar.textContent = this.km.printkm();
-
-    // if(this.kmVar.textContent <=0) {            defeinider al final
-    //   this.gameEnd();
-    // }
+   if(this.kmVar.textContent <=0) {           
+       this.gameOver();
+     }
   }
 
 
