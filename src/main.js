@@ -123,7 +123,7 @@ function createDeadScreen() {
   deadScreen = buildDom(`
       <main class="deadScreen">
         
-       <img class="overAnimation" src="/images/overAnimation.gif" alt="overAnimation" />
+       <img class="overAnimation" src="images/overAnimation.gif" alt="overAnimation" />
       
       </main>
     `);
