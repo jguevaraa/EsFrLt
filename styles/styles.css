@@ -1,0 +1,243 @@
+/*  CSS reset  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*  typography  */
+  
+  body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+  }
+  
+ /*  splash  */
+
+  .imageIntro {
+    width: 30%;
+    }
+
+  .splashScreen1 {
+    width: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: #111;
+  }
+
+/*  INTRO  */
+  
+  /* GAME STYLES */
+  
+  .game {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url(../images/FJMoq.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+
+  .canvas-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 704px;
+    height: 90%;
+    background: url(../images/loopcity.gif), url(../images/road.gif);
+    background-repeat: no-repeat;
+    background-size:  100% 150px, 100% 850PX;
+    background-position: center 95px, center bottom;
+    
+   
+    
+  }
+  
+  header {
+  
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align:center;
+    position: absolute;
+    top:0;
+    margin: 50px auto;
+    padding: 10px 0;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 50%;
+    justify-content: space-around;
+
+    
+    
+  }
+  .game .lives {
+   ;
+  }
+
+  
+  .game .score {
+    ;
+  }
+  
+
+  #overAnimation{
+
+    width: 704px;
+    height: 90%;
+    bottom: 100px
+
+  }
+
+
+/* Game over screen */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .timer {
+
+    float: right;
+    height: 6vh;
+    width: 12vw;
+    margin: 2% 0px 0px 2%;
+    border-radius: 40px;
+ 
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .score {
+
+    float: right;
+    height: 6vh;
+    width: 12vw;
+    margin: 2% 2% 0px 0px;
+    border-radius: 20px;
+ 
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+
+.lives{
+  float: right;
+  height: 6vh;
+  width: 12vw;
+  margin: 2% 2% 0px 0px;
+  border-radius: 20px;
+
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  .game .label {
+    font-weight: bold;
+    font-style:italic;
+  }
+
+  
+ /* GAMEover */
+
+ .overScreen {
+  width: center;
+height: 100vh;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background: url(../images/backgroundgameover.gif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;  
+}
+
+.buttonstar{
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #1a0400 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+
+
+
+
+.buttonover {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+
+.buttonover:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.buttonover:active {
+	position:relative;
+	top:1px;
+}
+
+        
+  
+  
