@@ -25,12 +25,18 @@ function createSplashScreen() {
         <h1>Escape From Latino - America</h1>
        <img class="imageIntro" src="/images/intro.gif" alt="imageIntro" />
         <button class="buttonstar">Start</button>
-
+        <audio id="introduction" preload="auto" style="display: none" src="sounds/bacground.mp3"></audio>
       </main>
     `);
   //Una vez creado el elemento HTML con la función buildDom, cargamos ese HTML en la página principal
   document.body.appendChild(splashScreen);
 
+
+    //ADD MUSIC AND SOUND EFFECTS
+  let introductionSound= splashScreen.querySelector("#introduction");
+  introductionSound.volume = 0.3;
+  introductionSound.play();
+  
   //seleccionamos el botón que hemos creado y le creamos un eventListener para después crear el jugo
   const startButton = splashScreen.querySelector("button");
 

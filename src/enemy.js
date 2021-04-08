@@ -13,19 +13,19 @@ class Enemy {
     this.speed = speed;
     this.image = new Image();
     this.image.src = "images/carPolice.gif";
-    this.frames = 6;
-    this.framesIndex = 0;
+
   }
 
   draw() {
     // this.ctx.fillStyle = "#FF6F27";
     // this.ctx.fillRect(this.x, this.y, this.size, this.size);
+    this.ctx.drawImage(
     this.image,
-    this.image.height,
     this.x,
     this.y,
-    this.width
-    this.height
+    this.width,
+    this.height,
+    )
   }
 
   updatePosition() {

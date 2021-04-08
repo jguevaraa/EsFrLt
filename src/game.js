@@ -33,7 +33,7 @@ class Game {
     this.canvas.setAttribute("width", this.containerWidth);
     this.canvas.setAttribute("height", this.containerHeight);
 
-    this.player = new Player(this.canvas, 1);
+    this.player = new Player(this.canvas, 5);
 
  // Se puede hacer con setkeys otro metodo
     function handleKeyDown(event) {
@@ -135,10 +135,8 @@ this.Overimage()
         console.log("lives", this.player.lives);
         enemy.x = 0 - enemy.size;
 
-        if (this.player.lives === 0 && this.timer.currentTime+ 8 ) {
-
-          
-         this.gameOver;
+        if (this.player.lives === 0) {
+        this.gameOver();
         }
       }
     });
