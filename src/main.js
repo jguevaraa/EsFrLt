@@ -23,7 +23,7 @@ function createSplashScreen() {
   splashScreen = buildDom(`
       <main class="splashScreen1">
         <h1>Escape From Latino - America</h1>
-       <img class="imageIntro" src="/images/intro.gif" alt="imageIntro" />
+       <img class="imageIntro" src="images/intro.gif" alt="imageIntro" />
         <button class="buttonstar">Start</button>
         <audio id="introduction" preload="auto" style="display: none" src="sounds/bacground.mp3"></audio>
       </main>
