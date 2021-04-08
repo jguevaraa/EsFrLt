@@ -74,7 +74,7 @@ function createGameScreen() {
 
         <div class="canvas-container">
             <canvas  style="z-index:1"></canvas>
-            <img id="overAnimation" style="z-index:2; position:absolute; visibility:hidden" src="/images/overAnimation.gif" alt="overAnimation" />
+            <img id="overAnimation" style="z-index:2; position:absolute; visibility:hidden" src="images/overAnimation.gif" alt="overAnimation" />
         </div>
         
     </main>
@@ -93,7 +93,7 @@ function removeGameScreen() {
 function createGameOverScreen(kmVar) {
   gameOverScreen = buildDom(`
   <main class="overScreen">
-  <img class="gameOvergif" src="/images/gameOvergif.gif" alt="gameOvergif" />
+  <img class="gameOvergif" src="images/gameOvergif.gif" alt="gameOvergif" />
         <h1 class="overScreenTitle">Muy lento amigo</h1>
         <p>Your score: <span>${kmVar}</span> </p>
         <span class="label">TOP SCORES</span>
@@ -123,7 +123,7 @@ function createDeadScreen() {
   deadScreen = buildDom(`
       <main class="deadScreen">
         
-       <img class="overAnimation" src="/images/overAnimation.gif" alt="overAnimation" />
+       <img class="overAnimation" src="images/overAnimation.gif" alt="overAnimation" />
       
       </main>
     `);
