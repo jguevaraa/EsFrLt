@@ -6,16 +6,21 @@ A game that you need to dodge enemies using up left right. the goal is to reach 
 #
 
 ### MVP (DOM - CANVAS)
-CANVAS, This is a game where the player can move betwen squares.
+CANVAS, This is a game where the player need to avoid enemies, if the time is over or the lifes drop to 0 you lose.
 
 
 ### Backlog
 
-jump movement
-Score
-remains km
-spraint
-dificult selector
+- jump movement
+- Set the Km remains on the HUD
+- Dificult selector
+- Create sprites for enemies and player
+- Set a pre - gameOver stage
+- Adding SFX
+- More stages - Countries
+- Adding sprites
+- Set speed + HUD
+
 #
 
 ## Data structure
@@ -23,27 +28,41 @@ dificult selector
 ```javascript
 main.js
 
-removeSplashScreen()
+function buildDom()
+
 createGameScreen()
-MapupdateSCreen()
+removeSplashScreen()
+
+CreateMapscreen()
+removeMapscreen()
+
+CreateGameSCreen()
 removeGameScreen()
+
+createPreGameoverScreen()
+removePreGameOverScreen()
+
 createGameOverScreen()
 removeGameOverScreen()
-endGameScreen()
-PregameoverSCreen()
+
+
+addEventListener(load - splash)
 
 game.js
 
+startObjets()
+updatedLoop()
 checkCollisions()
-startLoop()
+clearcanvas()
 gameOver()  
 updateGameStats()
-clearcanvas()
+
 
 enemmy.js
 
 draw()
 updatePosition()
+isInsideScreen()
 
 pointsObjets.js
 
@@ -55,10 +74,10 @@ player.js
 
 setDirection()
 updatePosition()
-handleScreenCollision()
+checkcolision()
 draw()
-didCollide()
 removeTime()
+RestingKM()
 
 field && background.js
 
