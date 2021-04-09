@@ -175,11 +175,11 @@ this.Overimage()
     
     this.kmVar = document.querySelector('.kmLeft');
     this.kmVar.textContent = this.km.printkm();
-
-    // if(this.kmVar.textContent <=0) {            defeinider al final
-    //   this.gameEnd();
-    // }
+   if(this.kmVar.textContent <=0) {           
+       this.gameOver();
+     }
   }
+
 
 
   
