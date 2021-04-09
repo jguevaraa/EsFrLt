@@ -34,7 +34,7 @@ function createSplashScreen() {
 
     //ADD MUSIC
   let introductionSound= splashScreen.querySelector("#introduction");
-  introductionSound.volume = 0.3;
+  introductionSound.volume = 0.1;
   introductionSound.play();
   
   //seleccionamos el botón que hemos creado y le creamos un eventListener para después crear el jugo
@@ -82,7 +82,7 @@ function createGameScreen() {
     `);
  //ADD MUSIC
   let gameSound= gameScreen.querySelector("#intgamesound");
-  gameSound.volume = 0.3;
+  gameSound.volume = 0.1;
   gameSound.play();  
 
   document.body.appendChild(gameScreen);
@@ -124,7 +124,7 @@ function createGameOverScreen(kmVar) {
 
         //ADD MUSIC
   let whywhoSound= gameOverScreen.querySelector("#whySound");
-  whywhoSound.volume = 0.3;
+  whywhoSound.volume = 0.1;
   whywhoSound.play();
 }
 function removeGameOverScreen() {

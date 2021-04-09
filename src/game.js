@@ -59,7 +59,7 @@ class Game {
 
     //KM LEFT
 
-    this.km = new Timer(3000);
+    this.km = new Timer(9000);
     this.km.kmCount();
 
     // // Add event listener for moving the player
